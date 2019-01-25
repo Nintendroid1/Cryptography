@@ -10,13 +10,21 @@ def affineEncrypt(plaintext: str, alpha: int, beta: int) -> str:
 
 print(affineEncrypt('affinitely', 17, 10))#KRRQXQVAPC
 
+#Helper method to find the inverse for alpha in mod 26
+def alphaInverse(alpha: int) -> int:
+    count = 0
+    while((alpha*count)%26 !=1 or count < 26):
+        count += 1
+    return count
+
+#Decrypts a string that was encrypted by an alphine cipher    
 def affineDecrypt(ciphertext: str, alpha: int, beta: int) -> str:
     ciphertext = ciphertext.upper()
     plaintext = []
     for c in ciphertext:
         n = ord(c) - 65 #A=65 in ascii
-        n = alphaInverse(alpha)*(n-beta)
+        n = (alphaInverse(alpha)*(n-beta)) % 26
         plaintext.append(chr(n+65).lower())
     return ''.join(plaintext)
 
-print(affineEncrypt('KRRQXQVAPC', 17, 10))#KRRQXQVAPC
+print(affineDecrypt('KRRQXQVAPC', 17, 10))#affinitely
