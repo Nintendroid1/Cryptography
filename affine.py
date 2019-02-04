@@ -1,3 +1,8 @@
+"""
+	MATH 4175 - HW 1
+	Affine Cipher Encryptor and Decryptor
+	Nathaniel Salazar
+"""
 import sys
 
 #Encrypts a string using an alphine cipher
@@ -15,6 +20,10 @@ def alphaInverse(alpha: int) -> int:
     count = 0
     while((alpha*count)%26 !=1 or count < 26):
         count += 1
+    while(count > 26):
+        count -= 26
+    while(count <0):
+        count += 26
     return count
 
 #Helper method to find the gcd using Euclidean Algorithm

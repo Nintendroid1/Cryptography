@@ -1,3 +1,8 @@
+"""
+	MATH 4175 - HW 1
+	Caesar Cipher Encryptor and Decryptor
+	Nathaniel Salazar
+"""
 import sys
 
 #Encrypts a string using an caesar cipher
