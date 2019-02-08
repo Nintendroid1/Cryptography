@@ -15,4 +15,5 @@ Lists the valid affine keys (alpha and beta) possible with a given n using gcd m
 Encrypts and Decrypts strings using a vigenere cipher. Key needed for both.
 
 # frequency.py
-Counts the appearance of each letter of a ciphertext in relation to the standard english alphabet
+Counts the appearance of each letter of a ciphertext in relation to the standard english alphabet.
+Also calculates the Index of Coincidence for the ciphertext.
