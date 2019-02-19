@@ -17,3 +17,6 @@ Encrypts and Decrypts strings using a vigenere cipher. Key needed for both.
 # frequency.py
 Counts the appearance of each letter of a ciphertext in relation to the standard english alphabet.
 Also calculates the Index of Coincidence for the ciphertext.
+
+# hill.py
+Encrypts and Decrypts strings using a hill cipher. Decryption still under construction.
