@@ -24,5 +24,5 @@ Encrypts and Decrypts strings using a hill cipher. Decryption still under constr
 # SpherePackingBound.py
 Calculates the Hamming Sphere given the Length of the codeword and the number of errors to correct
 
-# SPN
+# spn.py
 Substitution Permutation Network Example
