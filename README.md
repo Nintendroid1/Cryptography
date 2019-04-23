@@ -26,3 +26,6 @@ Calculates the Hamming Sphere given the Length of the codeword and the number of
 
 # spn.py
 Substitution Permutation Network Example
+
+# Linear Approximation Table (not mine)
+https://gist.github.com/mimoo/b2387d45fbbfcbb30553d791ed4b0ff7
