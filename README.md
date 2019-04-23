@@ -20,3 +20,9 @@ Also calculates the Index of Coincidence for the ciphertext.
 
 # hill.py
 Encrypts and Decrypts strings using a hill cipher. Decryption still under construction.
+
+# SpherePackingBound.py
+Calculates the Hamming Sphere given the Length of the codeword and the number of errors to correct
+
+# SPN
+Substitution Permutation Network Example
