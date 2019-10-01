@@ -75,5 +75,26 @@ if __name__=="__main__":
         else:
             print("Invalid File")
 
+    if(len(sys.argv) == 3):
+        f = open(sys.argv[1], "r")
+        if f.mode == "r":
+            results = f.read()
+            resultList = results.split()
+            final = ""
+
+            #Read p and q from a file
+            p = int(resultList[0])
+            q = int(resultList[1])
+
+            #Read e from stdin
+            e = int(sys.argv[2])
+
+            phi_n = (p-1)*(q-1)
+
+            d = modinv(e, phi_n) #d\equiv e^-1 mod phi(n)
+
+            print(d)
+        else:
+            print("Invalid File")
     else:
         print("Please type, n, e, and a file to decrypt in RSA")
