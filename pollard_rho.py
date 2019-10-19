@@ -18,7 +18,7 @@ if __name__=="__main__":
 
             p = math.gcd(y-x, n)
 
-            #print("i=%d x=%d y=%d p=%d" %(i,x,y,p))
+            print("i=%d x=%d y=%d p=%d" %(i,x,y,p))
             i = i+1
 
         if(p==n):
